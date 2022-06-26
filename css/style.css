@@ -1,0 +1,88 @@
+body{
+    background-color: black;
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI Light', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Side Bar */
+#sidebar{
+    position: fixed;
+    left: -250px;
+    height: 100vh;
+    z-index: 10;
+    background-color: black;
+}
+
+#innerbar{
+    width: 250px;
+}
+
+#btnBar{
+    width: 45px;
+}
+
+#xBtn, #listBtn{
+    font-size: 22px;
+    font-weight: 900;
+}
+
+#xBtn{
+    display: none;
+}
+
+#logoImgBox{
+    width: 35px;
+    margin: auto;
+}
+
+.navItem{
+    position: relative;
+    top:100vh;
+    left: -200px;
+    padding-top: 20px;
+    color: white;
+}
+/* Movies */
+.overlay{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    transition: all 1s ease-out;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.posterMovie:hover .overlay{
+    top: 0;
+}
+
+/* Contact Form */
+.input{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+/* .input:-webkit-autofill, */
+/* .input:-webkit-autofill:hover,
+.input:-webkit-autofill:focus,
+.input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+} */
+
+.input:-webkit-autofill { 
+    -webkit-background-clip: text;
+}
+
+.alert{
+    display: none;
+}

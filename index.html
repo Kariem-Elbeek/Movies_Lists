@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Exam - Movies</title>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="icons-1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+    <section id="sidebar" class="d-flex">
+        <div id="innerbar" class="d-flex align-content-between flex-wrap">
+            <div id="itemsbar" class="px-3 col-12">
+                <ul class="list-unstyled">
+                    <li id="nowPlaying" class="navItem"><a href="#">Now playing</a></li>
+                    <li id="popular" class="navItem"><a href="#">Popular</a></li>
+                    <li id="topRated" class="navItem"><a href="#">Top Rated</a></li>
+                    <li id="trending" class="navItem"><a href="#">Trending</a></li>
+                    <li id="upcoming" class="navItem"><a href="#">Upcoming</a></li>
+                    <li id="contactItem" class="navItem"><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <div id="barFooter" class="px-3 col-12 mb-5">
+                <div id="navIcons" style="d-flex">
+                        <a href="#" class="m-2 text-white"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="m-2 text-white"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="m-2 text-white"><i class="bi bi-globe"></i></a>                      
+                </div>
+                <div id="copyRight">
+                    <span class="text-white-50">Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+            </div>
+        </div>
+        <div id="btnBar" class="d-flex text-center justify-content-center align-content-between flex-wrap bg-body">
+	
+                <div id="logo" class="col-12">
+                    <div id="logoImgBox">
+                        <img src="images/logo.png">
+                    </div>
+                </div>
+                <div id="toggleBtn" class="col-12">
+                    <i id="xBtn" class="bi bi-x"></i>
+                    <i id="listBtn" class="bi bi-list"></i>
+                </div>
+            
+                <div id="toggleIcons" class="col-12">
+                    <a href="#" class="d-block"><i class="bi bi-globe"></i></a>
+                    <a href="#" class="d-block"><i class="bi bi-share"></i></a>
+                </div>
+            
+        </div>    
+    </section>
+    <section id="mainSection" class="pt-5">
+        <div id="searchBar" class="container w-75">
+            <div class="row">
+                <div class="col-md-6">
+                    <input id="allMovies" class="form-control input mb-5 " placeholder="get movies by word..." autocomplete="off">
+                </div>
+                <div class="col-md-6">
+                    <input id="searchWord" class="form-control input" placeholder="search...">
+                </div>
+            
+            </div>
+        </div>
+          
+        <div id="displayMovies" class="container text-center my-1 py-2 ">
+                
+            <div class="row" id="moviesInput">
+                
+            </div>
+        
+        
+        </div>
+    
+    
+    </section>
+    <section id="contact" class="container w-75 mx-auto my-5 ">  
+        <h2 class="text-light my-5">Contact Us...</h2>
+        <div class="row">
+            <div class="col-md-6 p-2">
+                <div class="form-group">
+                <input class="form-control input" id="nameInput" placeholder="Enter Your Name">
+                    <div class="alert alert-danger" id="nameAlert">
+                    Your Name is not valid
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="form-group">
+                    <input class="form-control input" id="emailInput" placeholder="Enter Email">
+                    <div class="alert alert-danger" id="emailAlert">
+                        entre valid email
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="form-group">
+                    <input class="form-control input" id="phoneInput" placeholder="Enter phone">
+                    <div class="alert alert-danger" id="phoneAlert">
+                        entre valid phone
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="form-group">
+                    <input class="form-control input" id="ageInput" placeholder="Enter Age">
+                    <div class="alert alert-danger" id="ageAlert">
+                        entre valid Age
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="form-group">
+                    <input class="form-control input" type="password" id="passInput" placeholder="Enter Password">
+                    <div class="alert alert-danger" id="passAlert">
+                        entre valid password *Minimum eight characters, at least one letter and one number:*
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 p-2">
+                <div class="form-group">
+                    <input class="form-control input" type="password" id="repassInput" placeholder="Enter RePassword">
+                    <div class="alert alert-danger" id="repassAlert">
+                        entre valid Repassword
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+        <button type="submit" id="submitBtn" class="btn btn-outline-danger my-2">Submit</button>
+    
+      </section>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
